@@ -1,0 +1,21 @@
+#contenedor{
+  overflow: hidden;
+} 
+
+#pelota{
+margin-top: 20px;
+background-image: url(../Imagenes/pelotita.png);
+background-repeat:no-repeat  ;
+background-size: contain;
+height: 100px;
+width: 100px;
+}
+
+
+/*animacion*/
+#contenedor:hover #pelota{
+  transform: rotate(900deg);
+  margin-left: 100%;
+  transition: all 10s;
+
+}

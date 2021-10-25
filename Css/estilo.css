@@ -1,0 +1,383 @@
+*{
+  /*Fuente de goole*/
+  font-family: 'Days One', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+#contenedor-ppal {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 0.2fr 3fr 0.3fr;
+  grid-template-areas:
+    
+  "cabecera cabecera cabecera cabecera"
+    "navbar navbar navbar navbar"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
+
+
+}
+
+
+#cabecera {
+  grid-area: cabecera;
+  min-height: 0.6fr;
+  /*background-image: url("../Imagenes/fondoalfombra.jpg");
+  background-repeat: repeat;*/
+  background-color: #5C7AEA;
+}
+
+/* navbar*/
+#navbar {
+  grid-area: navbar;
+  display:flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.elementos{
+  padding: 14px 25px;
+  /*display: none;*/
+}
+
+/* links nav bar*/
+#navbar a {
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-align: center;
+  margin-inline: 15px;
+}
+
+/* cambia el color on over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.botonPelota{
+  display: none;
+}
+
+/* Fin navbar*/
+
+#contenido {
+grid-area: contenido;
+ background-color: #5C7AEA;
+ padding: 25px;
+ 
+
+}
+
+#socialbar {
+  background-color: #333;
+}
+
+#footer {
+  background-color: #333;
+  grid-area: footer;
+  
+
+}
+
+#Videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 20px;
+  row-gap: 20px;
+}
+
+
+/*REGLAMENTO*/
+
+.contenido-reglamento > h1 {
+  color: black;
+  text-align: center;
+}
+
+
+
+.contenido-reglamento div.imglink-ppal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin: 5px 20px ;
+  row-gap: 20px;
+  
+
+}
+
+
+div.imglink-ppal .imglink {
+  text-align: center;
+  padding: 10px;
+  width: 350px;
+    background-image:url("../Imagenes/fondoalfombra.jpg");
+  background-repeat:repeat;
+  border:solid 2px #777;
+
+}
+
+div.imglink-ppal .imglink h3{
+  color: white;
+}
+
+.contenido-reglamento img {
+  width: 300px;
+  height: auto;
+  
+}
+
+
+/*efecto al pasar el mouse*/
+.contenido-reglamento .imglink:hover {
+  border: 2px solid  black ;
+
+}
+
+/*HISTORIA*/
+
+.contenido-historia > h1{
+  text-align: center;
+   }
+  
+  .contenido-historia > p{
+    padding-left: 20px;
+    padding-right: 25px;
+    text-align: justify
+    }
+
+    .contenido-historia h2{
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+
+/*ZAPATILLAS*/
+
+.contenido-zapatillas h1{
+text-align: center;
+}
+
+
+/* --- Galeria de imagenes ---*/
+
+.contenido-zapatillas div.gallery-ppal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 20px;
+
+}
+
+.contenido-zapatillas div.gallery
+{
+  border: 2px solid #333; ;
+  margin-bottom: 20px;
+}
+.contenido-zapatillas div.gallery img {
+  width: 300px;
+  height: auto;
+  
+}
+/*
+
+/*efecto al pasar el mouse*/
+.contenido-zapatillas div.gallery:hover {
+  border: 2px solid  gray ;
+
+}
+
+/* --- Galeria de imagenes ---*/
+
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+/*ver si sigo usando esto en algun lado Centrada*/
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+
+
+
+/*SOCIAL BAR PIE DE PAGINA vamos a usar esta para tablet y una lateral derecha para Web*/
+/*
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+*/
+
+.fa {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+    width: 20px;
+
+}
+
+.fa:hover {
+padding-right: 3rem;
+border-radius: 1rem 0 0 1rem;
+box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.social{
+  position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+
+
+.social a {
+  border:solid 2px #333;
+}
+
+
+.copyright{
+text-align: center;
+color: white;
+padding: 15px;
+}
+
+
+
+/* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+          
+
+          #contenedor-ppal {
+            display:flex;
+            flex-direction: column;
+            
+          }
+                    
+          #cabecera {
+            display: none;
+          }
+                    
+          /* navbar*/
+          #navbar {
+            flex-direction: column;
+
+          }
+          
+          /*en el Javascript lo uso para ocular/mostrar el menu*/
+          .elementos{
+          display: none;
+
+          }
+
+          /* links nav bar*/
+          #navbar a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+
+       
+          }
+          
+
+          .botonPelota{
+            display:block;
+          }
+                              
+          /* Fin navbar*/
+          
+          #contenido {
+           background-color: #5C7AEA;
+           padding: 5px;
+               
+          }
+          
+          #socialbar {
+            display:none;
+          
+          }
+
+}
+
+ /* Media Query for Tablets */
+        @media (min-width: 768px) and (max-width: 1024px){
+
+
+
+          #socialbar * {
+           display: none;
+          
+          }
+                    
+          #cabecera {
+            display: none;
+          }
+               
+
+
+}
+
+      
